@@ -1,0 +1,17 @@
+.box{
+    height: 400px;
+    width: 200px;
+    border: 5px solid blanchedalmond;
+    overflow: scroll;
+}
+.box2{
+    height: 400px;
+    width: 200px;
+    border: 5px solid burlywood;
+    
+}
+.images .logo{
+    height: 100px;
+    width: 100px;
+
+}

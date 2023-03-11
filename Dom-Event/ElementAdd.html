@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            border:2px solid red;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <article id="first-article">
+        <h3>article-1</h3>
+        <p class="Author">Author-1</p>
+        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia perspiciatis magnam, labore culpa tempore quo earum eveniet praesentium consequuntur quos repellendus ea incidunt ipsam possimus expedita natus minus pariatur rerum!</p>
+    </article>
+    <article>
+        <h3>article-2</h3>
+        <p class="Author">Author-2</p>
+        <p class="description">Ut temporibus aut facilis, neque laboriosam harum quisquam asperiores incidunt, aperiam accusamus vel odit, qui quo odio autem sit ex laborum consequuntur! Temporibus voluptatibus eum mollitia enim pariatur at culpa!</p>
+    </article>
+    <article>
+        <h3>article-3</h3>
+        <p class="Author">Author-3</p>
+        <p class="description">Quas itaque voluptatum optio sunt, saepe nemo fugit nostrum vero, dolores accusantium fuga maiores voluptatem maxime. Vel sequi omnis harum nesciunt eaque, hic animi mollitia quasi inventore ad, itaque in!</p>
+    </article>
+    <ul id="list">
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+    </ul>
+
+    <script>
+        var article=document.getElementById('first-article');
+        const newArticle=document.createElement('p');
+        newArticle.innerHTML='this is added by javascript';
+        article.appendChild(newArticle);
+
+        //in List 
+        const ul=document.getElementById('list');
+        const newList=document.createElement('li');
+        newList.innerHTML='new list added by js';
+        ul.appendChild(newList);
+        
+
+    </script>
+</body>
+</html>
